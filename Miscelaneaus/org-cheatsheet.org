@@ -1,0 +1,120 @@
+#+TITLE: Org Mode Basics In Doom Emacs
+#+DESCRIPTION: An org document to help you follow along with the video of the same name.
+#+AUTHOR: Derek Taylor
+
+* Getting Started with Org Mode
+Read org mode manual with M-x org-info.
+M-RET to insert new headline at current level.
+** org-toggle-heading : SPC-m-h
+** org-toggle-item : SPC-m-i
++ Unordered list item one
++ Unordered list item two
+  - You can use dash instead of +
+  - Another list item.
+    1. Ordered list item one.
+    2. Ordered list item two.
+
+* Tree managment
+** Rotate current subtree between states: TAB
+** Rotate entire buffer between states : S-TAB
+** close (fold) the tree : zc
+** open (unfold) the tree : zo
+** fold everything : zM
+** unfold everything : zR
+
+* Motion
+** move left/down/up/right : h/j/k/l
+** next/prev heading : gj/gk OR CTR-j/k
+** move parent/child element : gh/gl
+
+* Structure Editing
+** insert new heading/item at current level : M-RET
+** insert new heading after subtree : C-RET
+** promote/demote heading : M-h/l  OR  M-LEFT/RIGHT
+** promote/demote current subtree : M-S-h/l  OR  M-S-LEFT/RIGHT
+** move subtree/list item up/down : M-j/k
+** move list item up/down but not subtree : M-S-j/k
+
+* Tables
+** Creating a table
+*** just start typing, e.g.|Name|Phone|Age RET |- TAB
+*** Insert empty row below C-RET
+*** convert region to table : C-c |
+*** Go to forward/backward by cell : TAB/S-TAB
+*** ...  separator at least 3 spaces : C-3 C-c |
+*** Make org table headline : SPC m b -
+*** Duplicate a field in the cell below : S-RET
+| ONE                | TWO        | THREE | FOUR     |
+|--------------------+------------+-------+----------|
+| This is a sentence | Some stuff | More  | ffffffff |
+| This is a sentence | Some stuff |       |          |
+|                    | Some stuff |       |          |
+*** Move current row UP : M-k
+*** Move current row DOWN : M-j
+*** Move current column LEFT : M-h
+*** Move current column RIGHT : M-l
+*** Insert new column : M-S-l
+*** Delete current column : M-S-h
+*** Insert new row : M-S-j
+*** Delete current row : M-S-k
+** Commands available inside tables
+The following commands work when the cursor isinside a table.
+Outside of tables, the same keys may have other functionality.
+
+* Insert Snippets
+** SPACE-i-s
+** bang : #!/usr/bin/env bash
+** Insert a license : pick a free license
+** current time  : Sun Feb  9 20:06:29 2020
+** pi :
+# -*- mode: snippet -*-
+3.141592654
+
+* Source block
+** insert a source block with "<s TAB" (in insert mode)
+*** after that you have to specify a lenguaje
+*** then you write the code and pres "RET"
+#+BEGIN_SRC shell
+echo "hellow world!"
+#+END_SRC
+
+#+RESULTS:
+: hellow world!
+
+* Some advanced editing thanks to Evil Mode!
+** select an element : vae
+** delete an element : dae
+** select a subtree : vaR
+** delete subtree : daR
+** yank subtree : yiR
+* TODO Set TAGS with : SPC-m-q :TODO:
+** TODO example two : S-RIGHT
+** TODO example one
+** To remove TODO : S-LEFT
+** toggle the todo state : SPC-m-t
+** org-schedule : SPC-m-d-s
+SCHEDULED: <2020-02-10 Mon 14:00-15:30>
+** [#A] org-priority : SPC-m-p
+*** after command set priority from A to C or SPC to remove
+** To create checkbox : - [ ]  [1/3] [33%]
+DEADLINE: <2020-02-22 Sat 01:00-03:00>
+- [ ] eggs
+- [ ] milk
+- [X] beer : C-c C-c OR RET
+** Move this file to front of agenda : C-c-[
+** Org-agenda : SPC-o-A
+** Tag search : SPC-o-a-m
+* Org Agenda:
+** Open org-agenda: SPC-o-A
+*** Press q to quit
+*** to change type of task: SPC-m-t
+** Mark as "todo": SPC-m-t-t
+** In normal mode RETURN toggle "todo" and "done"
+** Open org-schedule: SPC-m-d-s
+*** Press S-Arrows to move in the calendar
+*** Clicks also works
+*** Then add hour (24 hours or append am-pm)
+** Onces schedule something:
+*** the date can be adjust with S-Arrows
+*** Do this every x time: add ~++xtime~ to the end of the schedule replacing n and time
+*** Do this x days in a row: add ~--<YYYY-MM-dd day hour>~ after the schedule

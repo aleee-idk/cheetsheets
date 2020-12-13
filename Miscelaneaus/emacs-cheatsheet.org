@@ -1,0 +1,52 @@
+* Help
+** Search documentation: "SPC-h-d-h"
+
+* Bookmarks
+** Open bookmarks: SPC-RET
+*** Here you can load or create a bookmark typing it's name
+
+* Projects
+** Discover project: M-x projectile-discover-projects-in-directory
+** Discover project in default directory: M-x projectile-discover-projects-in-search-path
+** Switch to project: SPC-p-p
+** Inside a project:
+*** Browse project (file explorer): SPC-o-p
+*** Open file in project: SPC-SPC
+*** Eshell (needs to be uncommend in doom/init.el)
+**** Open eshell as opoup: SPC-o-e
+**** Open eshell: SPC-o-E
+
+* Windows
+** Change focused window: "SPC-w-w" "SPC-w-[h|j|k|l]"
+** Close focused window: "SPC-w-c" "SPC-w-q"
+** Vertical split: "SPC-w-v"
+** Horizontal split: "SPC-w-s"
+** Balance windows size: "SPC-w-="
+
+* Buffers
+** list buffers in the current workspace: "SPC-b-b"  "SPC-,"
+** list all buffers: "SPC-b-B" "SPC-<"
+** New Buffer: "SPC-b-N"
+** Save buffer: "SPC-b-s"
+** Kill buffer: "SPC-b-k"
+
+* Shells:
+** just search with M-x "shell" for "inferior shell"
+** Ansi shell: M-x "ansi-term"
+** vterm: M-x "vterm" "best terminal emulator"
+** eshell: M-x "eshell" "internal shell for emacs"
+
+* Magit
+** Magit status: SPC-g-g
+*** With TAB with an element selected it shows more info
+*** With l shows logs options
+*** With s stage some highligh unstaged item
+*** With S stage all unestaged items
+*** With u unestage some highligh staged item
+*** With U unestage sll staged items
+*** With c shows commit menu
+**** press c again to really enter commit screen
+**** enter a commit message and press C-c C-c to save it
+*** With p shows push menu
+*** With b shows branch menu
+*** With ? shows help
