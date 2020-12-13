@@ -1,4 +1,5 @@
 - [Headings](#headings)
+- [Dropdown Menus](#dropdown-menus)
 - [Emphasis](#emphasis)
 - [Lists](#lists)
 - [Links](#links)
@@ -27,6 +28,32 @@ Alt-H1
 
 Alt-H2
 \------
+
+## Dropdown Menus
+
+Closed
+
+<details>
+<summary>Heading</summary>
+
+- markdown list 1
+  - nested list 1
+    - nested list 2
+- markdown list 2
+
+</details>
+
+Open:
+
+<details open>
+<summary>Heading</summary>
+
+- markdown list 1
+  - nested list 1
+    - nested list 2
+- markdown list 2
+
+</details>
 
 ## Emphasis
 

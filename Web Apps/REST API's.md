@@ -1,5 +1,9 @@
 # REST API's
 
+<details>
+
+<summary>Index</summary>
+
 - [REST API's](#rest-apis)
   - [Introduction](#introduction)
     - [Guiding Principles of REST](#guiding-principles-of-rest)
@@ -56,6 +60,8 @@
   - [Documentation](#documentation)
     - [Software to auto generate docs](#software-to-auto-generate-docs)
     - [Resources](#resources-14)
+
+</details>
 
 ## Introduction
 
