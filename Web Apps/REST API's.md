@@ -150,7 +150,7 @@ This patters are week by themeself so use HTTP headers and Get parameters or res
 
 - [Api Guide](https://apiguide.readthedocs.io/en/latest/build_and_publish/use_RESTful_urls.html#api-payload-formats)
 
-### Good RESTful URL examples
+### Good RESTFUL URL examples
 
 List of magazines:
 

@@ -148,3 +148,7 @@ Templates usually take advantage of inheritance, which includes a single base te
   <h3> This is the end of my child template</h3>
 {% endblock %}
 ```
+
+## Deployment Options
+
+[Flask Docs](https://flask.palletsprojects.com/en/1.1.x/deploying/)
